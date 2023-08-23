@@ -1,0 +1,1876 @@
+1
+00:17:34 --> 00:17:52
+Yeah, because I've made, made some mistakes. We have some additional tool about, yeah, doing seconds alignment and one very, yeah, fancy to, but also PR design, a lot of our customers are working in the cell phone rapid, in the field where these 2 is very, very important to.
+
+2
+00:17:52 --> 00:17:55
+To them.
+
+3
+00:17:55 --> 00:18:11
+So customers I mentioned will typically use system. It's not genus for we sort of walk. But the system also don't have an inbuilt ELN and the ways are implementing means that there is no central repository for all the sequences.
+
+4
+00:18:11 --> 00:18:22
+That have been designed, leading often to duplication, of work across different team if they are not aware that the specific team, you know, has already designed a plasmid.
+
+5
+00:18:22 --> 00:18:32
+In Benjamin, we enforce some n naming convention for this plasmid or detrace but also some uniqueness constraint.
+
+6
+00:18:32 --> 00:18:34
+So it means that for example you cannot register twice a plasmid which has the same sequence you will be notified.
+
+7
+00:18:34 --> 00:18:50
+And you will know that that's always been already been created by someone in the team so you will not lose time recreating it cloning a new same plus means that already exist.
+
+8
+00:18:50 --> 00:18:59
+And if you can have access already to a central repository like like Beching. So help, so bringing everything under one system really.
+
+9
+00:18:59 --> 00:19:12
+Ajana, agenda to the headers or scientist, to save time when, doing this molecular biology walk, but also to collaborate with the other team, especially in big company where they might have.
+
+10
+00:19:12 --> 00:19:18
+Murdoch, Marika, biology team in many location. It helps to know if someone has already created.
+
+11
+00:19:18 --> 00:19:22
+These plasmid somewhere else.
+
+12
+00:19:22 --> 00:19:33
+Any question? So far on this molecular biology.
+
+13
+00:19:33 --> 00:19:36
+Hi Paul, I have a question.
+
+14
+00:19:36 --> 00:19:38
+Yeah.
+
+15
+00:19:38 --> 00:19:56
+The parameters that you showed that were calculated so are these actually fixed like is there any provision in this system where we can have certain other parameters in this system where we can actually fix like, is there any provision in this system where we can, have certain other parameters added like, if you go to the tab that you were
+
+16
+00:19:56 --> 00:19:59
+Yeah. When when I when I select sequence and
+
+17
+00:19:59 --> 00:20:07
+Yeah, so here. Yes, right. Yeah, I'm talking about these parameters only.
+
+18
+00:20:07 --> 00:20:16
+Yeah. But the GC content, I mean, it's pretty straightforward. It's like the, and domestic temperature is based on a specific algorithm.
+
+19
+00:20:16 --> 00:20:21
+I will double check. I don't think we can change the way the melting temperature is calculated.
+
+20
+00:20:21 --> 00:20:45
+For example, and there is no way here. To add more parameter here it's for DNA sequence you will see for a protein sequence you will have a few or more over biochemical properties and I will show you later in the demo and I will look for specific antibodies, a few other parameters that can be also automatically computed, but it would be on a in a slightly different view.
+
+21
+00:20:45 --> 00:20:50
+Okay, okay, so these parameters calculations are already set into the system, right? Okay.
+
+22
+00:20:50 --> 00:20:59
+Yeah. Yeah, is it something that For some reason you would like to change or that you have some customers that might.
+
+23
+00:20:59 --> 00:21:02
+Would like to change this, way it's calculated or
+
+24
+00:21:02 --> 00:21:09
+No, like if like, just for an example, like if there's some, certain other parameters.
+
+25
+00:21:09 --> 00:21:24
+Are useful to be showed here. So that's why I asked it came up in my mind like that.
+
+26
+00:21:24 --> 00:21:25
+Oh.
+
+27
+00:21:25 --> 00:21:26
+Okay, I understood. So this specific 2 parameters are a set. That already it's really in the base, the platform.
+
+28
+00:21:26 --> 00:21:34
+These are common algorithms that are used to, to, to, to, to, to, to, to, to, yeah, to, get, it, usually, yeah, if you want to do PCR amplification or stuff like.
+
+29
+00:21:34 --> 00:21:35
+Okay, okay.
+
+30
+00:21:35 --> 00:21:39
+Stuff like that. And that is something, yeah, very, it's a percentage of.
+
+31
+00:21:39 --> 00:21:45
+So it's something you cannot really cannot really change
+
+32
+00:21:45 --> 00:21:47
+Okay, thank you.
+
+33
+00:21:47 --> 00:21:48
+Sure.
+
+34
+00:21:48 --> 00:21:59
+All the password and sequence map registry, right? Is it the part of the, sample this is 3 or the elementary process we have or it is a separate system.
+
+35
+00:21:59 --> 00:22:00
+Glad you can just do the best.
+
+36
+00:22:00 --> 00:22:14
+Yeah, this is part of the registering inventory and we will see actually in the right next part of the demo how we register on new plasma prep but you could be the same to register a new sequence or a using or or embedded structure the table.
+
+37
+00:22:14 --> 00:22:19
+Perfect. Yeah, thanks.
+
+38
+00:22:19 --> 00:22:27
+So that bring me to the to the next part of this demo for reset or we will talk about sample, sample management.
+
+39
+00:22:27 --> 00:22:35
+And just to give a bit of context here as well. So many organization manage, They have data and the samples in disparate separate.
+
+40
+00:22:35 --> 00:22:50
+Systems. We while each individual system might be very sufficient for a given specific task. Issues with compliance and traceability will start to image, a, when scientists are trying to keep all this multiple C step.
+
+41
+00:22:50 --> 00:22:59
+Systems up to date and synchronized between, each other. Benchling solve this problem by embedding the sample management tools.
+
+42
+00:22:59 --> 00:23:16
+So registry and inventory directly into the same platform and we will see directly here on that book we can interact with this registration and inventory table that are structure of tables that will really capture information in the in the database.
+
+43
+00:23:16 --> 00:23:17
+So let me. Move on. with my not book country here and here we see.
+
+44
+00:23:17 --> 00:23:37
+Oh, sorry. Scroll down a bit. A bit fast. So if I continue with my protocol, we see with this, what I called strip, your table, so registration table, or whistle table, where we will here register a new plasmid prep.
+
+45
+00:23:37 --> 00:23:44
+So with this plasmid sequence that we have we have been inputting into the Jacob table earlier.
+
+46
+00:23:44 --> 00:23:51
+And this registration table can be fully. Configurable based on the type of samples that you want to register.
+
+47
+00:23:51 --> 00:24:05
+So here for a plasmid prep, I'm interested in capturing preparation type, for example, that it was prepared and we will see once I capture some data, some, this data, will also automatically been aggregated to this, to this plasmid.
+
+48
+00:24:05 --> 00:24:12
+So we can set up different type of data that is expected. Percent. So for example, for the prep tab.
+
+49
+00:24:12 --> 00:24:25
+I can set up some drop-down list, that helps to reduce, error when people, capture the data in this table, but it also helped to standardize the way people in the table will in the team will name, name things.
+
+50
+00:24:25 --> 00:24:34
+And to date, I can have some date field. We will see later with other table, other type of fields like, yeah, free text or numbers or.
+
+51
+00:24:34 --> 00:24:46
+Our link to entity as we see we see here I can set up the data today for example. And when I will click on submit here, it will really register this new plus me prep.
+
+52
+00:24:46 --> 00:24:52
+In the benching registry in in the database. It will register the Blacksmith prep and also link it.
+
+53
+00:24:52 --> 00:25:02
+2 of his plasmid here. So if I would go to the plasmid here I will also be able, to see.
+
+54
+00:25:02 --> 00:25:09
+All the plasmid preps that were ever obtained. From this plus mid here, including the one I just created.
+
+55
+00:25:09 --> 00:25:22
+Today, 20 s of August. We've also metadata that are informed. So we really connect everything together by using this embedded, structured, table here.
+
+56
+00:25:22 --> 00:25:29
+So same way I capture a new entity here. And you see this, we can create some logic into our template.
+
+57
+00:25:29 --> 00:25:40
+So when I register this this new plus me prep it has automatically in my template filled in the next table which is the table to capture some data here some like QC.
+
+58
+00:25:40 --> 00:26:02
+So let me manually fill in this this table for example. So we can add like that manually the data you can see I didn't mention you can also reinforce that people obliged, to fill in some specific field when you see this red asterisk.
+
+59
+00:26:02 --> 00:26:14
+This is to ensure that people don't register. Either results or new samples in the database without capturing the essential minimal information.
+
+60
+00:26:14 --> 00:26:27
+You can also attach image. So for example, here if I select a gel. Jet picture for example and you will see you have even like some preview of this image.
+
+61
+00:26:27 --> 00:26:38
+And I can submit when I submit this result, it will attach this results. 2, so plasmid prep, but also to the parent plasmid.
+
+62
+00:26:38 --> 00:26:44
+Is that I, so if I would go to the pound plus mid. I will, I will see.
+
+63
+00:26:44 --> 00:26:54
+Sorry, if I go to the recent tab or, so. So, the, acid concentration results.
+
+64
+00:26:54 --> 00:26:55
+For all its plasmid prep. So everything aggregated in one place. It's save a lot of time when people are looking for there.
+
+65
+00:26:55 --> 00:27:15
+So they know that everything is accessible, shared. Live as along the I mean when the scientists are capturing this.
+
+66
+00:27:15 --> 00:27:22
+So here you see now that I've captured the data, I have this violate things. It means that something has been updated.
+
+67
+00:27:22 --> 00:27:29
+I can refresh. Refresh the table and indeed because I have captured some data. So it's also directly open front.
+
+68
+00:27:29 --> 00:27:45
+I, to this plasmid bread. Registration, table so I have already so that I just to show the poor or anything it might not make direct sense because here we have it just below in the table but you can like that flow data from the database with this computed fields.
+
+69
+00:27:45 --> 00:28:01
+Wherever they are from any entity which is connected to be. To this place. So the same way that The other notebook, we interact directly with the registry with the database.
+
+70
+00:28:01 --> 00:28:05
+We can also interact with the inventory. So the Do manage the physical location where or samples are stored.
+
+71
+00:28:05 --> 00:28:23
+And let me show you. So for example, in a few steps. Here we'll first create a new box where I want to store this plasmid prep and eventually we can really model the physical labs of our customer.
+
+72
+00:28:23 --> 00:28:24
+So here. Simply modeled as to building north building for example, I want to do something in the lab.
+
+73
+00:28:24 --> 00:28:36
+A one and to store my boss in the freezer in a specific shell. So you can like that really.
+
+74
+00:28:36 --> 00:28:57
+Model the physical location and now create the box and indicate where it is stored. Once the book has been created, I'd like to mention that we also support, backward printing and scanning so I don't have a backup printer at home but I could simply if I had print Zola bells to put on my box.
+
+75
+00:28:57 --> 00:29:10
+So later on, when I take this box, I could simply scan it. To fill the tables in benching so for example here where I want to store my new entity I need to select the box.
+
+76
+00:29:10 --> 00:29:18
+I would simply scan it, scan this backward. To select it.
+
+77
+00:29:18 --> 00:29:19
+So in the next table here, which is what we call an inventory table, we will create new container where we restore.
+
+78
+00:29:19 --> 00:29:32
+My plasmid prep. I could do that manually, so select which entity, which sample I want to store, but I can here with one example would be pretty simple.
+
+79
+00:29:32 --> 00:29:40
+But if you are handling hundreds of sample, we also help scientists with some additional features. So if I use this plus button here, I can directly use the previous show to table, structure table in my entry here.
+
+80
+00:29:40 --> 00:29:54
+So for example, to fill in my source entity. Colon and I can select that I want to store.
+
+81
+00:29:54 --> 00:30:02
+My plus me prep that I have registered earlier. In. And I want to start yet the density.
+
+82
+00:30:02 --> 00:30:14
+So it finds this plasmid prep automatically. I can select if for example I want to I record them in 5 a liquid I can automatically like that create 5 line in my inventory table with the 5 plasmid bread.
+
+83
+00:30:14 --> 00:30:20
+So if I had more plasma prep, I would have like also. All that, what's needed.
+
+84
+00:30:20 --> 00:30:31
+I can then select the, the box I want to use so I can select directly. Would be paste from the table above the box I want to use or I could simply scan as I mentioned earlier.
+
+85
+00:30:31 --> 00:30:37
+The books that I have in hand and then, I want to begin in which position in the boss I want to, to create and store my plasmid.
+
+86
+00:30:37 --> 00:30:57
+I could do that manually. It's an empty box that I've just created, but I can also use this field next available position tool that scientist to automatically populate this field so if the box has already other samples it will automatically skip the position where these samples have been.
+
+87
+00:30:57 --> 00:31:05
+Has been have been stored. So let's then I can answer the stores. I don't know the quantity.
+
+88
+00:31:05 --> 00:31:12
+Let's say I'm storing 250 microliter for each of these of this sample and when I will click on transfer it will really register this information in the database into inventory database.
+
+89
+00:31:12 --> 00:31:26
+It creates these tubes with a unique identifier. Like for the box, I could print the labels, the, directly from these tables and then.
+
+90
+00:31:26 --> 00:31:40
+Stick them on my on my tubes and if I will open this box here I will see now, this box with the 5 tubes that I've just created and their contents here.
+
+91
+00:31:40 --> 00:31:46
+On the right. You can't, I mean, yeah, it comes with a few additional tools that help.
+
+92
+00:31:46 --> 00:31:49
+So for example, if I select a specific tube, I can, for example, reserve them or check them in or out.
+
+93
+00:31:49 --> 00:32:00
+It helps to, for example, reserve a tube. If you don't want that your collect use it because you plan, you plan an experiment in the next days and you want to make sure that you have the right material.
+
+94
+00:32:00 --> 00:32:16
+So it can help to solve this. The sort of challenging that customers are often facing in the lab in terms of sample, sample management.
+
+95
+00:32:16 --> 00:32:22
+So here just to close this, this network and tree, we have seen about sample management.
+
+96
+00:32:22 --> 00:32:30
+Once we have finished an experiment, Santa, scientists can also send their entry for review for signature by the manager.
+
+97
+00:32:30 --> 00:32:51
+This is something process which is required sometimes. By authority in some specific area or simply in the process of of the team but also if you want to later on apply for patents you need to have all your entry sign and witness so you can do that simply by sending, send a book country for review.
+
+98
+00:32:51 --> 00:32:56
+It will select the details based on what you have configured. You can have a multi-step review process as well if you need several people to review it.
+
+99
+00:32:56 --> 00:33:12
+And once you create the review, it will disabled, it takes a few seconds, but it will notify of course, the editor, by email and it will, disable editing until it has been reviewed.
+
+100
+00:33:12 --> 00:33:26
+It is if it is accepted. Then it will be editing will be disabled for good and the entry will be locked if there is some modification to be put it will reappoint the editing it will reload editing.
+
+101
+00:33:26 --> 00:33:35
+For that aspect. So with this I'm closing a bit this part about sample management and not book country.
+
+102
+00:33:35 --> 00:33:39
+Before I move to how we can then leverage a way we have structure data to search for this data in our search tool or create some dashboards with our analytic tools.
+
+103
+00:33:39 --> 00:33:53
+Do you have any any question so far?
+
+104
+00:33:53 --> 00:33:54
+Check.
+
+105
+00:33:54 --> 00:34:02
+Yeah, for, registering these samples and placements. Do we have any? Process or.
+
+106
+00:34:02 --> 00:34:15
+Yeah, or it is like any super users only be able to register the service any process like that.
+
+107
+00:34:15 --> 00:34:16
+Okay.
+
+108
+00:34:16 --> 00:34:18
+So you can, you can control very, granularly. I can register which type of samples.
+
+109
+00:34:18 --> 00:34:32
+So here it was a plasmid prep. Basically here, I mean, yeah, I close this entry, but I can create a different type of entity based on the different schema that I've created, whether it's a cell line, the cell bank.
+
+110
+00:34:32 --> 00:34:42
+An animal or etc, plus meat prep is that we have seen and this schema here that you see we can really control who has access who can register.
+
+111
+00:34:42 --> 00:34:43
+Okay.
+
+112
+00:34:43 --> 00:34:48
+We can just consider them. That's something you can really configure and control.
+
+113
+00:34:48 --> 00:34:49
+The same way you will be able to also. Let's say although you're experiment by project here, so I was in the poll project.
+
+114
+00:34:49 --> 00:34:56
+Okay, Okay.
+
+115
+00:34:56 --> 00:35:09
+I can quickly show you here. I can in the project settings here. Decide who has writing access with an editor with As I mean access, I can handle by person also by team.
+
+116
+00:35:09 --> 00:35:19
+Or by organization this this access so that is really a high level of granularity in term of a Permission settings in Benjlink.
+
+117
+00:35:19 --> 00:35:21
+Okay.
+
+118
+00:35:21 --> 00:35:25
+Sure.
+
+119
+00:35:25 --> 00:35:35
+Well, one quick question from my side. Can we also split these samples, do a liquidating, and how is that tracked within the system?
+
+120
+00:35:35 --> 00:35:42
+Yes, so once that's actually what I've done here by allocating, the different tubes.
+
+121
+00:35:42 --> 00:35:47
+Then in the later phase I can really link the data to a specific tube and not to the sample.
+
+122
+00:35:47 --> 00:36:04
+I mean, by linking into this, will be linked to this sample. But then you know that it comes from these specific tubes that they're important, especially in processed development, because when you have a lot of different, maybe the tube has been mishandled so you can You can check all this information tube by tube.
+
+123
+00:36:04 --> 00:36:22
+And here I just tracking for example quantity I would be able for example to track for the tube over metadata we could customer for example I mean tabby it has been frozen and thought and frozen and thought so you can like that have this visualization and this control yeah
+
+124
+00:36:22 --> 00:36:23
+Does it answer you?
+
+125
+00:36:23 --> 00:36:27
+Okay, got it. Yeah, he does. Thanks, Bob.
+
+126
+00:36:27 --> 00:36:28
+Sure.
+
+127
+00:36:28 --> 00:36:37
+What can we do with some allocating also because we did one a little bit? Can we? Liquid, somebody quid using this.
+
+128
+00:36:37 --> 00:36:40
+We can Yeah, Sorry, yes, Paul, yeah.
+
+129
+00:36:40 --> 00:36:47
+I mean, from one tube, then that I've created. Dispense it into a YouTube.
+
+130
+00:36:47 --> 00:36:53
+Yes, that's something we can do. So I don't think I've configured it in, I mean, also it's luck now for editing.
+
+131
+00:36:53 --> 00:36:57
+Okay.
+
+132
+00:36:57 --> 00:36:58
+So the Okay.
+
+133
+00:36:58 --> 00:37:04
+Let me just. Let me just create a blank entry here. But what you will use here, it's some inventory table, but you know you can either create new containers, that's what I did today in this demo.
+
+134
+00:37:04 --> 00:37:17
+But you could also feel existing container or update container or plate attribute. But when you create a new container, you can start.
+
+135
+00:37:17 --> 00:37:18
+Okay.
+
+136
+00:37:18 --> 00:37:21
+From a tube already from an existing container and create new container while you will transfer a specific amount. And that would make the process of family quoting.
+
+137
+00:37:21 --> 00:37:24
+Okay. Oh, somebody. Yeah.
+
+138
+00:37:24 --> 00:37:31
+Exactly. Sure. So yeah, this is a very high level overview. Of course, I cannot, sorry, I cannot enter in every single, of course I cannot, sorry, I cannot enter in every single, every single, every single use case because it needs to be quickly.
+
+139
+00:37:31 --> 00:37:46
+It's always point to click configuration, but it needs to be done upstream of the demo when we want to really demonstrate this this this property.
+
+140
+00:37:46 --> 00:37:47
+Yeah.
+
+141
+00:37:47 --> 00:37:50
+I understood both. Yeah.
+
+142
+00:37:50 --> 00:38:03
+So in the next part of the demo, I just want to show you how, this structure that I'm materialized in our registry, we can really easy search for legacy data.
+
+143
+00:38:03 --> 00:38:29
+So this is very important because normally in league at CLN, people really usually, you know, data dump and when someone leaves the company, you know, 2 years down the line, it's very difficult sometime to find, to find this, this data to find this, this results back or also information on the samples that were created by these people.
+
+144
+00:38:29 --> 00:38:36
+Hey and Benjamin as soon as I've created in my experiment. The sample or register the specific results.
+
+145
+00:38:36 --> 00:38:45
+It's directly mirrored in our registry here. So if I would go to the register, I can also use actually the global service tool here.
+
+146
+00:38:45 --> 00:39:00
+Let me expand it. And here, let me clear it. So just first to show you that it really here here show all the different information that are inventing all the not route country all the different attempts that were .
+
+147
+00:39:00 --> 00:39:13
+So I have here you can see more than 4,000 items I can really use poor, filter, feature set to, set for a specific entity or specific data.
+
+148
+00:39:13 --> 00:39:26
+So for example here I would like to search for all all my plasmids that I have in my in my database and here you can see I find all my 50 plus meets and then I can leverage all of these metadata that come from this structure table to.
+
+149
+00:39:26 --> 00:39:37
+Within my searches by adding some, some filter. So based on this metadata field, so for example, I would be able to add a filter.
+
+150
+00:39:37 --> 00:39:42
+I mean, I can ask. As many filter as I want and combine this filter to narrow down myself.
+
+151
+00:39:42 --> 00:39:47
+So for example on a specific field, that will be, the viable domain and it needs to contain for example.
+
+152
+00:39:47 --> 00:40:02
+The AVD or 2, Let me find one random domain here. Applied and it will find my 7 plus me that contain this, specific domain.
+
+153
+00:40:02 --> 00:40:17
+We can like that. We, narrow down your search and find, the information, information and the plus me that you are you are looking for very very quickly let me just we move this filter.
+
+154
+00:40:17 --> 00:40:27
+You get just to show that you get information on all the metadata here, but you got also some information on all here for this plasmid sequence, all the tubes.
+
+155
+00:40:27 --> 00:40:53
+Also tubes that were stored here that contain a plasmid prep of this specific sequence and you can see here some specific tube I get the information on the what it contained and for 7 of these containers it illustrate what I was mentioning earlier that we have very granular way of setting on permission and here for example for 7 of his container I don't have access it's because they belong to a
+
+156
+00:40:53 --> 00:40:58
+project. You know books for which I don't have permission access. Here and just an illustration on how we can really at every level.
+
+157
+00:40:58 --> 00:41:12
+Control access access permission in I can do also some, very, text. Based sales directly.
+
+158
+00:41:12 --> 00:41:35
+So for example, if I search for this ABC 0 0 one, I will find all the entities so whether they are the antibodies complex here or purified antibody or send lines that were obtained with this ABC 0 0 one I will get information directly here in in my search too if I will open this Then we on Tibodi protein.
+
+159
+00:41:35 --> 00:41:43
+I will find here all the metadata information. But also some calculated. Calculated field. So here that are over.
+
+160
+00:41:43 --> 00:41:58
+Calculations that the one I showed you in the molecular biology. Design tool where I can see here some molecular weights some extinction coefficient absorbance here we aggregate all the sequence of the different chain of the antibody so this is quite unique of Benjamin to have all this information.
+
+161
+00:41:58 --> 00:42:06
+I, here. And as I've shown you for the plasmid, I also get access here to all the results.
+
+162
+00:42:06 --> 00:42:17
+Related to this. Whether this is to the purified antibodies that were obtained from this sequence and all the that were obtained from this sequence and all the data that were ever obtained by anyone else in the company.
+
+163
+00:42:17 --> 00:42:31
+And all the data that were ever obtained by anyone else in the company have access to all this information, directly, So here you can see like really how from 4,000 item I can really quickly access to to a specific item in my in my database and look at the fact that everything is.
+
+164
+00:42:31 --> 00:42:41
+On a unified data model, to get the access to all the information. The sample information, the metadata, the research data, but also your inventory information.
+
+165
+00:42:41 --> 00:42:57
+And also which not book pages there this information are connected connected to. So this is a very, very powerful.
+
+166
+00:42:57 --> 00:43:09
+Tools that are our customer usually really like compared to the legacy system. We're searching for, information is often very time consuming if even even possible.
+
+167
+00:43:09 --> 00:43:21
+Any question of this, searching, functionality?
+
+168
+00:43:21 --> 00:43:35
+So that bring me to another. Let's say a functionality in benching and another key benefit of having entered this data in a structure format, which is that it makes it also easier to gather insights from this data.
+
+169
+00:43:35 --> 00:43:42
+And either from a bench link in build tools that you utilize SQL queries to produce reports and dashboards that I will show you today, but also with external tools that we can connect.
+
+170
+00:43:42 --> 00:44:02
+To the Benjamin platform, they are all open API, endpoints. And if I jump back into the platform, here go to the inside module here, we can see that we can create different type of dashboards.
+
+171
+00:44:02 --> 00:44:18
+So for example, some operational dashboard. Where I will see like the task overview task assignments, but please say for example, yeah, let me jump to a more talkative dashboard like some inventory management dashboard where I get information of all my plasmid and protein preparation.
+
+172
+00:44:18 --> 00:44:32
+So what I have left. Box availability. For example I have my WordPress main inventory here that I can configure to get an idea on the total volume for each of the plasmid sequence that I have.
+
+173
+00:44:32 --> 00:44:41
+You can set up some really more fancy, dashboard, like a ray junk consumption pair that can give you some insight and you know how frequently you need to set up your ordering.
+
+174
+00:44:41 --> 00:44:51
+Ordering process. So this is about inventory management, but you can also get some more.
+
+175
+00:44:51 --> 00:45:06
+More insight about your your data. For example, if I would go to the purification dashboard here I see all my purified antibodies but also some data on the priority for each of them that are a whole aggregated.
+
+176
+00:45:06 --> 00:45:17
+Here, the independent on in which you know not to contribute, we leave this inside dashboard. We really search into our SQL database.
+
+177
+00:45:17 --> 00:45:23
+Pull out, summarize all this information and give you some insight, help scientist, to take good decision.
+
+178
+00:45:23 --> 00:45:43
+You know, for example, here I see this specific, sample as a very low performance so I can get back to the entry, check what was wrong, what was a different parameter used, which, you know, which instrument where you use the data so we can get here quick access to all this this information.
+
+179
+00:45:43 --> 00:45:55
+Sorry. And so this is our inbuilt tool. But I'd like to also mention that we have already, some out of the box integration with third party analytics software, for example, with Jump.
+
+180
+00:45:55 --> 00:46:06
+And users can hear QUEUE, the registry and results that I'm benching and use it as a data set that is sync with jump.
+
+181
+00:46:06 --> 00:46:19
+Do the analysis in jump that will then automatically push back all the data in a new results stable in benching in the to capture it also in the vetting database that can be then used as a really centers.
+
+182
+00:46:19 --> 00:46:28
+Center, source of information for all the data that's at 70 fifth are, looking, looking for.
+
+183
+00:46:28 --> 00:46:45
+So do you have any question on this? Analytic parts, inside dashboard, and, to the integration.
+
+184
+00:46:45 --> 00:46:59
+Well, quick question. Do you have any? Oil box reports at the system level, primarily from the and user adoption part of you, like how many users being, you know, you using the system.
+
+185
+00:46:59 --> 00:47:05
+On a regular basis just to get that, adoption, or view.
+
+186
+00:47:05 --> 00:47:20
+So what we can have in this inside dashboard is We, how many, you can build like that like how many entries are created by users and stuff like that so that can give you an insight directly.
+
+187
+00:47:20 --> 00:47:32
+I don't think it's available to our customers, but we do have this information. Of that down offer, you know, engagement by our customer. So we get this information on how often they use the platform.
+
+188
+00:47:32 --> 00:47:38
+When was the last time they connected? How often? I mean, obviously information that we get, I don't think it's directly accessible to the customers.
+
+189
+00:47:38 --> 00:47:47
+I could I can double check that we can provide them this information if they request for it. I think so.
+
+190
+00:47:47 --> 00:47:48
+Okay. Yeah, got it.
+
+191
+00:47:48 --> 00:47:52
+I don't want to. I mean, not under a person that, but we, we have, we have this.
+
+192
+00:47:52 --> 00:47:57
+Yeah, makes sense. And, getting the insights on the experiment level. Can we also compare different batches, difference lines?
+
+193
+00:47:57 --> 00:48:03
+In a single video, something like that, Paul?
+
+194
+00:48:03 --> 00:48:08
+Definitely. So here, I'm not sure exactly how this, I didn't build this inside that bar, but here you have the filter here.
+
+195
+00:48:08 --> 00:48:16
+That you can put. You can select some filters, also in your sequel, Grace the way you make it selected.
+
+196
+00:48:16 --> 00:48:22
+So to just compare like, you know, from one experiment to another experiment and have this, information setup.
+
+197
+00:48:22 --> 00:48:23
+Yeah.
+
+198
+00:48:23 --> 00:48:31
+Okay. Okay, not necessarily the sample, but we can also do this. Batch, different batches and cell lines.
+
+199
+00:48:31 --> 00:48:36
+Yeah, so, far I want to be that it's still based on the SQL queries.
+
+200
+00:48:36 --> 00:48:53
+This is the only part in Benjamin, which is not like just point and click configuration, but this is also something we are walking on to enable more customers to be able to use it.
+
+201
+00:48:53 --> 00:48:54
+Yeah.
+
+202
+00:48:54 --> 00:49:03
+So. We do build some of this dashboard for our customers when you know exactly what they want. Some of them have the Also the, the skills in the house, to, meet, I do myself, I'm, really, I do not mention it when I present in myself, but I'm really, I do not mention it when I present in myself, but I'm a really molecular biologist by
+
+203
+00:49:03 --> 00:49:04
+Yeah.
+
+204
+00:49:04 --> 00:49:09
+training. I have absolutely no. Hey, education, background in software. I used to work with myself and that's it.
+
+205
+00:49:09 --> 00:49:12
+And I do, I do it myself. It's not that. Complete.
+
+206
+00:49:12 --> 00:49:19
+Yeah, makes sense. So this is configurable and highly flexible to. Do the way that you wanted to see the insights. Okay.
+
+207
+00:49:19 --> 00:49:22
+Got it. Thanks.
+
+208
+00:49:22 --> 00:49:42
+Sure, you're welcome. So. I kind of, finish this first. Half of the demonstration, I mean, which is I think the biggest half of the demonstration, which I had called like penciling for, for For research where I have mentioned that we have like 5.
+
+209
+00:49:42 --> 00:49:45
+Let's say Arias where we bring some, clear advantage, a clear value to our customers in experimental data capture.
+
+210
+00:49:45 --> 00:49:58
+We have a very intuitive user interface, but intuitive user interface that also connect. This is the most important part of benches that it's really.
+
+211
+00:49:58 --> 00:49:59
+Embedded with our biomolecule design tool and our sample management system or registering inventory.
+
+212
+00:49:59 --> 00:50:15
+That will, will, help a customer to achieve, you know, to to create a full, of the, of the data.
+
+213
+00:50:15 --> 00:50:28
+Or unified that will help also to quickly search all the data that are really connected to each other and help to build this inside dashboard but also to connect it with third party analytic to.
+
+214
+00:50:28 --> 00:50:30
+LEN at the end of the day really. Bring some clear advantage to our scientific team in terms of saving time.
+
+215
+00:50:30 --> 00:50:53
+I would say that the most important, but bringing their it's a drugs that comp that compound to market, faster, for their development development pipeline.
+
+216
+00:50:53 --> 00:51:05
+So everything, Everything I've shown so far, So Benchling platform in the context of, ELN and 3 for, for, research.
+
+217
+00:51:05 --> 00:51:12
+And actually, when Benjamin started, even years ago, that's in this area in Willia, Research where we found our first customers, especially in cell, therapy and gene therapy field.
+
+218
+00:51:12 --> 00:51:28
+But other the time those early adopters, Move their assets from the early research, into later phase of development.
+
+219
+00:51:28 --> 00:51:34
+And they would want it to keep using bench link for that work because they, yeah, service value of connecting all the data together.
+
+220
+00:51:34 --> 00:51:43
+And so therefore we have invested in our product to Kind of what we call follows a molecule. From our research into the development.
+
+221
+00:51:43 --> 00:51:48
+Space development, sorry space.
+
+222
+00:51:48 --> 00:51:53
+So to give a bit of background, research and development teams both need the flexible ELN for data.
+
+223
+00:51:53 --> 00:52:23
+Experiment driven data capture, but development teams near also more robust systems called limbs, level to inform, informatic management systems that support more process, even more driven work like for example sample testing, that a limbs is typically designed to handle along the developmental process of of a molecule.
+
+224
+00:52:23 --> 00:52:29
+So historically, ELN and LEMS have been, set up in very disparate solution, which Where very disconnected.
+
+225
+00:52:29 --> 00:52:53
+The one from the other. And as led to a lot of significant challenges, causing a drug on R&D, Just listed a few here in the middle, but really inefficient knowledge transfer between early, and, and, and, and development, TELE, poor context for scientific decision support for the developmental team.
+
+226
+00:52:53 --> 00:53:10
+Sorry. It's for my mouse. Lack of chefs, sample traceability, lack of sharp processes and process management and also ultimately it has led IT teams to be stuck maintaining multiple solution which is also quite costly for this for this company.
+
+227
+00:53:10 --> 00:53:29
+Te in a process development. We don't only want to walk together. To prevent and reduce this these difficulties But actually, their success really depends on being able to share this data, more effectively through the wall around the lifecycle.
+
+228
+00:53:29 --> 00:53:42
+And that's why Benchling, decided to rather than having just a simple, shared, accessible, database system, like I've shown you.
+
+229
+00:53:42 --> 00:53:54
+In the first part of the demonstration we have decided to design a system which is called walk flows that will use this structure of data like we've seen in the first part of the demonstration but to power up the walk stream of our customer itself by connecting all the lab activity together.
+
+230
+00:53:54 --> 00:54:12
+From scheduling experiments, say, and runs, but also capturing all this will to results once completing, but also helping our customer to optimize their workflow as the work is progressing.
+
+231
+00:54:12 --> 00:54:26
+So when they change a specific parameter, being able to quickly iterate this process. Along there as our organization.
+
+232
+00:54:26 --> 00:54:27
+So here just an example on how complex. processed development workflow can look like.
+
+233
+00:54:27 --> 00:54:38
+Here for, for example, for antibody development. But what is important? What is what I want to alike is that really, what the teams, what the company needs.
+
+234
+00:54:38 --> 00:55:05
+At the end is really to be able to apps their different teams so molecular biology including team, and development team upstream processing team analytical team and yeah purification and don't stream processing team to really collaborate together because at the end of the day they're the workflow really will follow a molecule from the design of the of the plasmid.
+
+235
+00:55:05 --> 00:55:19
+Yeah, up to the end of all this path to the formulation of their purified antibody that I want to release on the market and then every step of the way, for example, analytical, analytical team, so it needs to be involved.
+
+236
+00:55:19 --> 00:55:31
+So, you know, how do these teams under communication and between each of them, how do the under sharing data with very separate system, in between each of them, how do they under sharing data with very separate system, very despite sharing data with very separate system, very despite tools. It's extremely complicated, extremely time consuming.
+
+237
+00:55:31 --> 00:55:33
+We're just by tools. It's extremely complicated, extremely time consuming. We're, very separate system, very despite tools.
+
+238
+00:55:33 --> 00:55:36
+It's extremely complicated, extremely time consuming. We're dealing in, sharing lot of emails back and forth with emails, sometime missing information.
+
+239
+00:55:36 --> 00:55:52
+So that's what we have seen with our customers. Walking in these, for example, and Benjamin will address, some of their, challenges by simplifying, sample management, connecting all.
+
+240
+00:55:52 --> 00:56:02
+So different lab activities or the defense. you need operations or the different part of the workflow, together.
+
+241
+00:56:02 --> 00:56:24
+It will help streamlining. Analytical, experiments. So by scheduling these experiments, runs runs faster for also more inside inside full results and it will help to optimize Matiles production by maximizing procedure efficiency with end-to-end traceability of the workflow of the different experiments that are connected together.
+
+242
+00:56:24 --> 00:56:35
+Along with this workflow. So in this, second part of the demo, we will see how we can easily and quickly.
+
+243
+00:56:35 --> 00:56:42
+Design and configure our workflow. We can then create a new new task and your workflow, a leverage of dashboard to simplify the work of the scientist, of the manager and see how we can.
+
+244
+00:56:42 --> 00:56:52
+Walk here, how we can also streamline the task execution that at the end of the day will lead to a really seamless data flow all along.
+
+245
+00:56:52 --> 00:56:59
+This, this process.
+
+246
+00:56:59 --> 00:57:10
+Just sorry, it can invite. Drink a bit of water. And I will jump back here into the platform directly into the workflow configuration, tool.
+
+247
+00:57:10 --> 00:57:40
+So choose to give a bit more. Context here one of the common complain that we were gathering from people using legacy limbs system what's up there walk flow how it was modeling this system was very clunky and very difficult and complicated, complete complex complicated to go to configure and offer often very set this stone without the possibility for the user to even modify it.
+
+248
+00:57:40 --> 00:57:48
+When, when, for example, you want to tweak a bit like, for example, what analysis, is, required.
+
+249
+00:57:48 --> 00:57:59
+So this led, this leads to really delays in an additional cost, actually, for admin team in, in this organization.
+
+250
+00:57:59 --> 00:58:03
+Especially when researchers want to modify or iterate, on their processes because of the results.
+
+251
+00:58:03 --> 00:58:15
+I've realized that they need to slightly modify this. This workflow. So here in this workflow editor I can quickly show you that we can actually easily add or remove.
+
+252
+00:58:15 --> 00:58:26
+We move, you know, some of these unique operations that were pre pre pre configured. So for example, after my expansion of my cell lines, I want to do multiple, multiple analysis.
+
+253
+00:58:26 --> 00:58:35
+So for example, those responses, I can CP, drag and drop. This specific. You need, you need to operation and then connect them.
+
+254
+00:58:35 --> 00:58:41
+Together very simply by drag and drops.
+
+255
+00:58:41 --> 00:59:00
+Here and then linking to the outputs of my workflow. Finalized once. It's a workflow has been has been processed you can quickly auto layout here to make it look a bit nicer but basically what it means is that a super team here can save a lot of time.
+
+256
+00:59:00 --> 00:59:11
+Because it becomes very simple here to iterate and modify processes. When a new workflow is a new workflow is is needed.
+
+257
+00:59:11 --> 00:59:18
+I will not save it because it's a workflow that is used by many of my colleagues in the in the solution concept.
+
+258
+00:59:18 --> 00:59:24
+Consulting, team. But what I will do now is create a new, a new task.
+
+259
+00:59:24 --> 00:59:33
+So use one of this workflow to create a new task for my teams. So. Will walk the process to walk through today is a common upstream workflow that we see in antibody process development.
+
+260
+00:59:33 --> 00:59:45
+So we are going to take a walking cell line. That was created by another team that we have in the lab.
+
+261
+00:59:45 --> 01:00:04
+We will grow it in a bio reactor with defined parameters and then take So resulting project, purify and characterize it to determine and close the growth parameters affect the yield or the purity of my, final product.
+
+262
+01:00:04 --> 01:00:17
+So processes such like this one that I just described. Require a specialized team to curve the end coordinate their reports For example, it's a bioreactor, not ready, then this process will be delayed in starting.
+
+263
+01:00:17 --> 01:00:23
+And so for the teams processing these samples, they really need to be able to plan ahead as well.
+
+264
+01:00:23 --> 01:00:33
+So that's what we will see, how punching will help. To address address that so here will use my powerful set to start a workflow I will select the walking Sell Bank here for simplicity.
+
+265
+01:00:33 --> 01:00:38
+Propose in this demo, select only one, but I could select as many, you know, cell bank as I want if I want to create several one in parallel.
+
+266
+01:00:38 --> 01:00:52
+This is also possible and I will leverage this. Here walk flow tool. Start an upstream, processing.
+
+267
+01:00:52 --> 01:00:59
+Run here. And we will see. We will see here the workflow that was designed.
+
+268
+01:00:59 --> 01:01:02
+So the bioreactor runs and the simplification and that frustrations that correspond to the upstream.
+
+269
+01:01:02 --> 01:01:16
+Processing. Here in this window I can set up who are the watchers. Watch us so that the people who will be notify every time that my sample is moving from one step.
+
+270
+01:01:16 --> 01:01:25
+To another in this in this workflow. So for example I can set up my colleague, overall event there son.
+
+271
+01:01:25 --> 01:01:36
+That might be yeah so when I create this workflow Here it will move by sample. Share into the first processing part here.
+
+272
+01:01:36 --> 01:01:50
+As upstream processing by director and to save some time here and into the demo will jump to one that I've already started to fulfill but basically when you execute I want to execute one of this run it will automatically create a template here that you can fill it.
+
+273
+01:01:50 --> 01:02:02
+So another book template which is associated to this task. Here that you can run and create.
+
+274
+01:02:02 --> 01:02:10
+But before I move to how we can complete and a task. Let me just get back a bit, a bit before.
+
+275
+01:02:10 --> 01:02:19
+So because here I've created a single task, but you have to imagine that in our organization, you often receive within multiple tasks, multiple requests in big big company.
+
+276
+01:02:19 --> 01:02:26
+You can receive like up to tens or hundreds of requests per week and you need a way to manage all this request.
+
+277
+01:02:26 --> 01:02:32
+You don't want to create a not book country like that for each single request every time a scientist.
+
+278
+01:02:32 --> 01:02:45
+As a as a new and new samples that you need to request. for example, for an, team, they're often request like hundreds of QPCR and analytic request.
+
+279
+01:02:45 --> 01:03:09
+Per day. So let me get back to this workflow dashboard here tool and let me let's say switch personality and let's imagine that here I'm a manager that arrive into the lab on a Monday morning and I want to check for example I'm responsible of the bureaucratic processing run and I want to check all the tasks that have not been assigned today to someone then I
+
+280
+01:03:09 --> 01:03:24
+can simply so here I have access because I'm when I mean to all of the different tasks all the different worlds a different workflow can be a bit overwhelming but like in our research tool, we can also filter use filters to search for specific task.
+
+281
+01:03:24 --> 01:03:31
+And we can also save these, so for example, I can go to. Or the unassigned bio reactor runs and it will really like select all only the ones that have not yet been assigned.
+
+282
+01:03:31 --> 01:03:43
+That are waiting to be assigned to someone to be executed. So here as a manager, I can see simply select them one by one or We all of them to simply assign them.
+
+283
+01:03:43 --> 01:03:54
+Directly, to someone as them that Let me assign them directly to myself here for this demo.
+
+284
+01:03:54 --> 01:04:02
+When I assign them, it will directly MTV service dashboard. As it has been assigned to to my.
+
+285
+01:04:02 --> 01:04:08
+To let it to the scientists that is we've been charged of running this bioreactor run.
+
+286
+01:04:08 --> 01:04:26
+The benefit here is that it's automatically notify this person. You don't need to write then another email or spend time, into that making sure that you, find the right best and everything is really centralized on the platform and you can directly, send it to, to the right, to the right.
+
+287
+01:04:26 --> 01:04:36
+Shifting perspective again and imaging that no one's a technician. That want to car carry out the tasks that were assigned to me.
+
+288
+01:04:36 --> 01:04:44
+I will use a different dashboard, save search here that I have, but I will, for example, look for all the tasks.
+
+289
+01:04:44 --> 01:04:53
+That's where. Okay. Here. Let's miss all the sorry bioreactor ones that were assigned.
+
+290
+01:04:53 --> 01:05:05
+To me here and I can see here all the tasks that have come come to me so here it's only bioprocessing bioreactor run but I can also feature by type of task.
+
+291
+01:05:05 --> 01:05:12
+For example, if I'm in, analytical, analytical, so it's difficult for me to pronounce my French accent.
+
+292
+01:05:12 --> 01:05:37
+If I'm part of the analytical team, I can also filter by type of says that I want to run and from this dashboard I can really the same way select all the ones that are pending that I have not start executing yet to execute and it will all execute them in the same notebook templates so it will really help me to organize my walk around the different tasks, organize them based on the by order of
+
+293
+01:05:37 --> 01:05:46
+priority by deadlines. So we can like that really. Help, we can really help scientists.
+
+294
+01:05:46 --> 01:05:52
+Seamlessly organized, their work.
+
+295
+01:05:52 --> 01:06:03
+If I go back to my, first, entries that I've already pre-filled, just to save a bit some time in this demo, but you see it has to save a bit some time in this demo but you see it has opened this template that I've already prefilled I have registered new entity so here I'm keeping track of the of the different parameters.
+
+296
+01:06:03 --> 01:06:16
+That something people do in a bio process development. So you will track all the parameters associated to your bioreactor run.
+
+297
+01:06:16 --> 01:06:30
+So later on you can associate the results that you get to be specific parameters and We do the experiment, check different parameters and identify which one are the best for attending the best field, or the security of your, of your compound.
+
+298
+01:06:30 --> 01:06:36
+So I will capture here some results. I've already some catch up some data, etc, etc.
+
+299
+01:06:36 --> 01:06:44
+And Ajan, my last step will be to our vast my, here my bio, reactor production, material here.
+
+300
+01:06:44 --> 01:07:02
+So I've already prefilled the data here. So anything I need to do is to submit. Here to register that I've in the database that I've collected this new bioreactor material and you will see it will automatically hear feel this also output a table which is connected to the task.
+
+301
+01:07:02 --> 01:07:10
+That was created in the walk flow. So when I click on submit here It creates the bioreactor run in the database here.
+
+302
+01:07:10 --> 01:07:19
+So how asked material and it automatically link it to this task. Here. So this output task is connected here to this.
+
+303
+01:07:19 --> 01:07:25
+Sorry, I scroll up to the input task. So that was what was requested to me with all the information.
+
+304
+01:07:25 --> 01:07:40
+It's a weird name, but just basically upstream processing, so we can name them based on our customer, are used to name the different, different task when I will submit that I have finalized the task, I can say, yeah, it was completed, submit.
+
+305
+01:07:40 --> 01:07:47
+What it does is that in my flowcharts that you have seen earlier, it will automatically move.
+
+306
+01:07:47 --> 01:07:57
+Sorry. Here. This sample 2, the next phase here. That would be the centrifugation.
+
+307
+01:07:57 --> 01:08:00
+It automatically notify the next team or the next person that every sample has been moved to create automatically this new task.
+
+308
+01:08:00 --> 01:08:12
+That then I can handle as a manager or as a technician. So same way I shown you going to my dashboard seeing which task needs to be completed.
+
+309
+01:08:12 --> 01:08:28
+But what is important is at the end of the day all the tasks are connected to each other so all the data that you obtain here will be we will be connected so at the end of the day if I go to one as Sorry, this one that has been completed.
+
+310
+01:08:28 --> 01:08:39
+Here I will see all my some polls and at the end the output results that will be associated. Yeah.
+
+311
+01:08:39 --> 01:08:51
+So same way. We were connecting data to entity in our inside dashboard also exist. For this workflow item for this workload workload tasks.
+
+312
+01:08:51 --> 01:08:59
+Everything is built in Benjling as I already said on a unified data model. This means that we can also use or insight.
+
+313
+01:08:59 --> 01:09:10
+Tools here to get some insight on our workflows on our process development you can link task and dashboard together.
+
+314
+01:09:10 --> 01:09:16
+So I'm not sure here what I, yeah, something that is meaningful. I think in my upstream processing.
+
+315
+01:09:16 --> 01:09:38
+So here for example, I can check their specific, processing wrong, you know, some data, some OG data, I can check it based on the temperature, based on the pH, that also the parameters that we're registering the existing run everything is connecting and help the scientist to get quick information, quick and live information on what is going on.
+
+316
+01:09:38 --> 01:09:49
+On their direct processing, run here in this case, but in modern early in their process. Development workflow.
+
+317
+01:09:49 --> 01:09:57
+So I if I get back, oops, sorry, if I get back to my, to my slides, we've seen, So here.
+
+318
+01:09:57 --> 01:10:12
+Really how workflows can help to all of the modules can help scientists to plan and visualize their process in a in process development teams.
+
+319
+01:10:12 --> 01:10:21
+We have seen how we can, with our workflow management. Manager easily schedule. Plan, assign and execute experiments and how then.
+
+320
+01:10:21 --> 01:10:30
+So unified that a model of mentioning can really help to get also dashboard notification, for all the team working in a development, slides.
+
+321
+01:10:30 --> 01:10:46
+Before I move on with my last, one or 2 slide about some specific, functionalities that are particularly relevant also to the to the process development team but also manufacturing do you have any questions so far on this workflow model I know it was a lot to process.
+
+322
+01:10:46 --> 01:10:52
+But yeah, if you have any question, I'm happy to take them.
+
+323
+01:10:52 --> 01:10:56
+Yes, Paul, I had a question.
+
+324
+01:10:56 --> 01:10:57
+Yep.
+
+325
+01:10:57 --> 01:11:08
+I could see that there were some predefined. And.
+
+326
+01:11:08 --> 01:11:10
+So I'm, you're losing connection.
+
+327
+01:11:10 --> 01:11:20
+That's, to the user when they are developing a workflow. A user wants to add a particular.
+
+328
+01:11:20 --> 01:11:22
+Hello?
+
+329
+01:11:22 --> 01:11:28
+Yes, I'm I don't know if it's on my side, but I Cannot really hear you it's catching a lot.
+
+330
+01:11:28 --> 01:11:29
+Oh, oh. Okay,
+
+331
+01:11:29 --> 01:11:33
+Maybe it's but let me, I think I got, I think I understood. Let me rephrase and tell me if it was I think I understood let me rephrase and tell me if it was the question.
+
+332
+01:11:33 --> 01:11:49
+So I showed you with some how to configure the workflow with some 3 defined step predefined, what we call unit operation and your question is Can the user, configure a new one as well?
+
+333
+01:11:49 --> 01:11:53
+If it's something completely different and not to this workflow and how is it is or do we work with them to configure it?
+
+334
+01:11:53 --> 01:12:05
+Was it your question?
+
+335
+01:12:05 --> 01:12:09
+I can. I can see, I don't know if it's on my side or.
+
+336
+01:12:09 --> 01:12:11
+It's not your site phone.
+
+337
+01:12:11 --> 01:12:15
+Okay.
+
+338
+01:12:15 --> 01:12:16
+Okay.
+
+339
+01:12:16 --> 01:12:18
+Well, I think that was basically Yeah.
+
+340
+01:12:18 --> 01:12:19
+We can add. Yeah.
+
+341
+01:12:19 --> 01:12:23
+No, it's,
+
+342
+01:12:23 --> 01:12:27
+Yes, so yes, we can. So your user can configure a new. You need operation, definitely.
+
+343
+01:12:27 --> 01:12:35
+So. That's pretty rare usually. It happens, but that but that's something that you can do.
+
+344
+01:12:35 --> 01:12:40
+It's also point and click configuration. It doesn't require any click configuration. It doesn't require any hard funding.
+
+345
+01:12:40 --> 01:12:48
+It's a bit more. It doesn't require any hard funding. It's a bit more, it's not that straightforward as I saw like just to drag and drop so but but we train users to drag and drop.
+
+346
+01:12:48 --> 01:12:55
+So, but, but we train users and some power user and our customer site to do it. We can also do it for them and usually what we do when we implement.
+
+347
+01:12:55 --> 01:13:16
+When pretty much work flows so we do that with their current workflows pretty in depth we've also put on shell a unit operation that we can imagine they are using but we will also train them yeah on how to simply create new one and bring you this workloads.
+
+348
+01:13:16 --> 01:13:25
+Okay, okay, so that would also be a link to some privilege that would be provided, right? Users would be able to do that.
+
+349
+01:13:25 --> 01:13:33
+Yes, no, of course. So for example, if I go back to my platform, I would need to go in the admin part here in the feature setting, but here not everyone has access to that.
+
+350
+01:13:33 --> 01:13:44
+I will go to my workflow schemas. And here, I mean, this is the backend of Bansing where I can configure all the different task here, the different unit operation, but not everyone, not everyone can do that.
+
+351
+01:13:44 --> 01:13:56
+It's really like on the, and mean users. And even among that mean users are really different level of privileges, that will allow you to configure that.
+
+352
+01:13:56 --> 01:13:58
+Okay, got it. Thanks.
+
+353
+01:13:58 --> 01:14:04
+Sure. You're welcome.
+
+354
+01:14:04 --> 01:14:07
+Any other questions?
+
+355
+01:14:07 --> 01:14:17
+Yeah, quick one from my side, Paul. This task management workflow, is this something similar to the request management generally?
+
+356
+01:14:17 --> 01:14:22
+So we are talking to the legacy request from Benchling. The, or. We use other tools that was going to request.
+
+357
+01:14:22 --> 01:14:25
+Yeah. Yeah.
+
+358
+01:14:25 --> 01:14:31
+Is, let's say, which replace we, we have the commission or this request tool.
+
+359
+01:14:31 --> 01:14:51
+This is what kind of replace the request tool with many. More functionalities and better connection. Because you can like that really have your I mean was a bit quick this demo but you can really like connect different the book country with each other and it helps to really connect all the data, together along the workflow and will follow your module from.
+
+360
+01:14:51 --> 01:15:01
+The plasmid and TTM proteins that you have created. All connected and add to we collaborate between all the different different things.
+
+361
+01:15:01 --> 01:15:02
+Okay.
+
+362
+01:15:02 --> 01:15:08
+Let's say that every of the workflow will be a request at the end, but, but with 2 more, functionality as you are, yes.
+
+363
+01:15:08 --> 01:15:19
+Okay, got it. And is it possible to solve not just to one user but to a specific department to because for example from upstream.
+
+364
+01:15:19 --> 01:15:22
+Maybe want the purification done by the purification department. Not just one person just sending that to the department.
+
+365
+01:15:22 --> 01:15:30
+Yeah, so you can. Yeah, you can set up in the in the configurations or default responsible parties can be person.
+
+366
+01:15:30 --> 01:15:31
+Okay.
+
+367
+01:15:31 --> 01:15:35
+It can be a specific person, but can be a team as well.
+
+368
+01:15:35 --> 01:15:41
+Okay, all the results shared will be coming back to the virtual experiments that's been requested.
+
+369
+01:15:41 --> 01:15:48
+So it will also come to all the watchers that you have set up when you when you create the workflow.
+
+370
+01:15:48 --> 01:15:49
+Yeah.
+
+371
+01:15:49 --> 01:16:01
+So that's also something. Also, but also also the default responsible. Parties, yes, will be notify when, when every step of the workflow is accomplished and also at the end of the workflow it would it would tell you that yeah this work was been completed.
+
+372
+01:16:01 --> 01:16:02
+Yep. Yeah.
+
+373
+01:16:02 --> 01:16:09
+So you have access to all that I've not shown you all the also that's bar but you have also this possibility to have directly in built.
+
+374
+01:16:09 --> 01:16:10
+I have a few minutes here. So quickly I will show it in the workflows here.
+
+375
+01:16:10 --> 01:16:24
+Tool dashboard. So I've shown you how you can find the different task, but you have also the output dashboard that will show you also also result, task so you can also filter here.
+
+376
+01:16:24 --> 01:16:28
+You don't need to absolutely, you know, create this inside dashboard, SQL queries.
+
+377
+01:16:28 --> 01:16:35
+You can also have like a scenario for the data from all your workflows directly. Here I'm not I'm not sure what I don't want to show you here.
+
+378
+01:16:35 --> 01:16:42
+Yeah, maybe these ones that I have created. We're here with some analytical request and I can see here.
+
+379
+01:16:42 --> 01:16:43
+Yeah.
+
+380
+01:16:43 --> 01:16:46
+Or the sample analyze and reserve. So it's something like that. It was an image, but that's key.
+
+381
+01:16:46 --> 01:16:51
+I would have like numbers or whatever I could get also. Oh, these data here. Okay.
+
+382
+01:16:51 --> 01:16:57
+That's good. Well, that was my next question whether we can see all the request task created.
+
+383
+01:16:57 --> 01:16:58
+Across all the experiments in one place. Yeah.
+
+384
+01:16:58 --> 01:17:02
+Yeah, and you can really filter by the one completely, the ones that have been with you, the ones that are in progress.
+
+385
+01:17:02 --> 01:17:13
+So you can really get, get the, a full overview of what is going on in your in your organization in time of these different, different tasks.
+
+386
+01:17:13 --> 01:17:15
+Yeah, got it. Thanks, Bob.
+
+387
+01:17:15 --> 01:17:19
+Sure.
+
+388
+01:17:19 --> 01:17:31
+So one last thing I'd like to, to also mention because it can be very important for the customers, when they start moving to late development and then already start thinking about manufacturing or some regulation.
+
+389
+01:17:31 --> 01:17:43
+It's about working in a GXP, environment and for that. Sometimes we require some, what we call validated, cloud.
+
+390
+01:17:43 --> 01:17:54
+Oh, and so benching offers with possibility. To have the the platform in a valid validated the cloud environment.
+
+391
+01:17:54 --> 01:18:07
+Which can, yeah. So you will get here above what we call the pension platform. So all this what we have talked about today, so I'm a nice Datamodel, Strachach, for, data, team collaboration, but on what we call a validated.
+
+392
+01:18:07 --> 01:18:24
+Infrastructure which mean controllable controllable, valid control, validated, turn out, compliance functionality, but also some validation for IQ, validation support.
+
+393
+01:18:24 --> 01:18:34
+So we have, if this slide like trying to expand the difference between a JSP, so between the validated and the non validated, benching platform.
+
+394
+01:18:34 --> 01:18:46
+It's a lot of information here, but we have configurable compliance. Controls that provide greater control like access policy dependable traceability or the trail chain of August.
+
+395
+01:18:46 --> 01:18:57
+D report that are pack already of the Benchinker platform, but we have on top of that also some data modification, feature, that the users provide the reason for any chance.
+
+396
+01:18:57 --> 01:19:07
+That they will do to a specific entity that will register for any chance that they will, do to a specific entities that will register, to a specific entities that will register benching, or to any of us structured, that would register benching, or to any other structured table, that had registered.
+
+397
+01:19:07 --> 01:19:11
+So we have the also been review and approval possibility to support a signature functionality as well as standardization.
+
+398
+01:19:11 --> 01:19:20
+Here template lockings that something I have not shown you but I've shown you some template here where I could write free text in here, but we can also log the template.
+
+399
+01:19:20 --> 01:19:31
+The So is a table, we can lock some specific column if you don't want the end user to.
+
+400
+01:19:31 --> 01:19:42
+To be able to modify the information which is in it that's something that is required by by customer working in the in the sorry in the JSP.
+
+401
+01:19:42 --> 01:19:55
+Environment. So on top of that, the next piece is a validated cloud release, which control, upgrades, to 4 times per years.
+
+402
+01:19:55 --> 01:20:07
+Let's use the standard, for the bench, startup platform which is where we have we can see we disease daily Ben Sling will also assist with impact assessment.
+
+403
+01:20:07 --> 01:20:21
+Which will bring down every chance. In the new release and every impact it might have. For the customer whether it's another one or must be configured chance 20, as a feature.
+
+404
+01:20:21 --> 01:20:36
+We also offer Qatar, release support for all validated customers. We have a new webinar offering, which really helped to the customer to understand and build their release impact assessment for every single release.
+
+405
+01:20:36 --> 01:20:48
+So yeah, that's a lot to digest in here on this, on these slides, but This is actually a key slide that help to understand and tell the story of the validated cloud.
+
+406
+01:20:48 --> 01:20:55
+And how it differs from our standard bench benching offering
+
+407
+01:20:55 --> 01:21:03
+So as as a conclusion, I mean we have covered quite a huge amount of feature and functionality here in the last 90, 95 min.
+
+408
+01:21:03 --> 01:21:26
+What I've shown represents what I would call a core. I mean, product for research and developments or I'm not book register inventory in biomical design how it integrate together to practice also workflows and now we can leverage it, you know, analytics in grilled tools, but we have also additional tools like for example, the to this tool which helps to manage in
+
+409
+01:21:26 --> 01:21:40
+Vivo. In Vivo data it's often very different than the ex vivo in vitro data capture so it's really meant for people doing in life that I capture on the on the animals for preclinical study and it helps.
+
+410
+01:21:40 --> 01:21:49
+We have this tool really connected and sync with the rest of the platform so Same message earlier, it will help to connect the different teams together.
+
+411
+01:21:49 --> 01:22:10
+So in video team with their upstream and downstream team of the and something I've not really gone through really extensively today is also lab automation modules that together with our Open API and data warehouse, we had to connect Benchling with external Apache analytic tools but also with instruments.
+
+412
+01:22:10 --> 01:22:19
+So it helps scientists to really increase that, for example, by automating, the data flow between instruments. Yeah.
+
+413
+01:22:19 --> 01:22:28
+And venturing, but it also helps them to reduce, errors when they need to work in a more compliant environments.
+
+414
+01:22:28 --> 01:22:34
+So that's what I wanted to share. Yeah, to share with you today.
+
+415
+01:22:34 --> 01:22:47
+And if you have a now any any more question, happy to happy to take them. In the last few, few, 3, 4 min that, that we have.
+
+416
+01:22:47 --> 01:22:56
+All do we have any guidelines kind of say configuration guidelines or user? BAYNESS or the same kind. We guidance documentation.
+
+417
+01:22:56 --> 01:22:57
+About screen.
+
+418
+01:22:57 --> 01:23:04
+So that. Do you have it? It's a guidelines document, the port related to design or worker designing or user.
+
+419
+01:23:04 --> 01:23:06
+Perspective or configurations. Kind of guidelines.
+
+420
+01:23:06 --> 01:23:11
+Was it? For the configuration or for the for the
+
+421
+01:23:11 --> 01:23:18
+No, anything, any, kind of stuff, right? If you want to configure or the user administration part right.
+
+422
+01:23:18 --> 01:23:37
+Is there any guidance with guidance you would like to follow and so on?
+
+423
+01:23:37 --> 01:23:38
+Hmm.
+
+424
+01:23:38 --> 01:23:41
+Yes, so we have some online documentation. Extensive documentation on every aspect of it. So that you can access i think it's publicly that it's about publicly available so not only to our customers but how to use Benchling, how to configure schema, how to configure an inventory table, how to even know how to configure for example, label printers.
+
+425
+01:23:41 --> 01:24:07
+So this is all a work that we do anyway for our customers when we implement and we will usually train them, recover this training so they have also a database of all this training that we have done with them so they can, rewards them, documentation, but we have also piece online database of support that you can access for configuration for how to use it also not only configure it.
+
+426
+01:24:08 --> 01:24:14
+Also in extensive, we have an extensive and quite exhaustive documentation on the, on the develop platform.
+
+427
+01:24:14 --> 01:24:30
+So how to We connect instrument with each other. So we have a really extensive documentation on the API. For example, API endpoints.
+
+428
+01:24:30 --> 01:24:31
+Okay.
+
+429
+01:24:31 --> 01:24:34
+How to use it, examples and what you can do with it. So is that something also which is probably publicly available and share with you, that we can check with you after this, this demonstration.
+
+430
+01:24:34 --> 01:24:36
+Thanks a lot. Thanks.
+
+431
+01:24:36 --> 01:24:39
+Okay.
+
+432
+01:24:39 --> 01:24:46
+Well, I said that you privately code all of the large molecular related research, experiments and 11 modules.
+
+433
+01:24:46 --> 01:24:58
+Just wondering, this Benchling off for any modules, functionality specific to small molecule chemistry, chemistry synthesis at all.
+
+434
+01:24:58 --> 01:25:21
+Yes, so we do. The fact is that we are now working with like Just to get some contact with maybe 20 of the top 50 big pharma company and of course, they're rich to us or most of them primarily because they are walking now starting to to develop some large molecular work, but they're also interested, in, using this for their legacy walk.
+
+435
+01:25:21 --> 01:25:26
+I mean, what they used to work for decades, which are, is working on small, so I've already built, some, tools that helps to, you know, like design the tools that helps to you know like design the molecule.
+
+436
+01:25:26 --> 01:25:44
+Imported from like you know small strings or stuff like that so you can support that. We don't support well I want to be clear with that we are not as good as over ELNs that are really focused on chemistry.
+
+437
+01:25:44 --> 01:25:45
+Yeah.
+
+438
+01:25:45 --> 01:25:50
+And the sense that we support out of the box. Reaction. We have some work on so we have customers.
+
+439
+01:25:50 --> 01:25:57
+I've been working with customer. Small company, but that we're working in, what we call modified oligos modified SIR, so that the community, modified.
+
+440
+01:25:57 --> 01:26:00
+Yeah.
+
+441
+01:26:00 --> 01:26:22
+There are some of them that don't do the chemistry part they just you know, order modified audio sequence and it's fine and then she is very strong because I think we are the only tool on the market that can model this chemical modification on the sequence and other sequence view, usually people use a complex Excel spreadsheets that are really not really not usable for.
+
+442
+01:26:22 --> 01:26:31
+To searching for specific modification on a specific sequence that that that touching can offers And this customer I'm mentioning is also using Benchling to design.
+
+443
+01:26:31 --> 01:26:41
+The specific chemical. Compounds that I want to bind to this, RNA. So It's a bit more walk around.
+
+444
+01:26:41 --> 01:26:48
+There you know, that I think is straightforward. Yellen, can is 3, that will help you to do the chemistry out of the box.
+
+445
+01:26:48 --> 01:27:03
+But we have some work around with all tables. Stretch your, to make some mix up to to help us above this field Usually to be clearly transparent with it, we tend to Be careful with customers that do only chemistry.
+
+446
+01:27:03 --> 01:27:13
+Because we are really upfront with it so we don't you know try to target them and send them something that will not, they will not be happy with.
+
+447
+01:27:13 --> 01:27:14
+Yeah.
+
+448
+01:27:14 --> 01:27:21
+But when the field of the mix. Between biologics and chemistries that's where we can we can really I think bring bring some value to them.
+
+449
+01:27:21 --> 01:27:25
+Okay. Makes sense.
+
+450
+01:27:25 --> 01:27:30
+Sure.
+
+451
+01:27:30 --> 01:27:34
+Alright, so we are over the half I think.
+
+452
+01:27:34 --> 01:27:46
+Yeah, thanks for, for the demo. Out here with the 1 min left. Yeah, appreciate everyone joining from the Excel team here.
+
+453
+01:27:46 --> 01:27:56
+If you do have any further questions, happy to over email. I'd rather has my email and I'm sure, you know, you can, Get your support there as well if needed.
+
+454
+01:27:56 --> 01:28:01
+But yeah. I appreciate your attention and have a nice afternoon.
+
+455
+01:28:01 --> 01:28:06
+Yeah, thank you so much for organizing this. Michael, and thank you so much for your time, Paul.
+
+456
+01:28:06 --> 01:28:13
+It was good walk through. And I really appreciate your time taking, you know, with us to walk through that.
+
+457
+01:28:13 --> 01:28:19
+I'll consolidate any questions. So, and I'll share that with you. Or maybe we'll see if we can have another session.
+
+458
+01:28:19 --> 01:28:22
+Just wait a Q&A, Michael.
+
+459
+01:28:22 --> 01:28:32
+Yeah, sure thing and I'll send over the recording afterwards. Well, so, whoever couldn't make it can reference up.
+
+460
+01:28:32 --> 01:28:33
+Okay.
+
+461
+01:28:33 --> 01:28:36
+Yeah, that would be brilliant. Thank you. Thank you so much. Again, Michael, Paul.
+
+462
+01:28:36 --> 01:28:37
+Sure.
+
+463
+01:28:37 --> 01:28:38
+No worries. You soon. Bye bye.
+
+464
+01:28:38 --> 01:28:40
+I can.
+
+465
+01:28:40 --> 01:28:41
+Bye bye, have a nice
+
+466
+01:28:41 --> 01:28:42
+Thanks.
+
+467
+01:28:42 --> 01:28:43
+Thanks. Bye.
+
+468
+01:28:43 --> 01:28:45
+Thank you.
+
+469
+01:28:45 --> 01:28:49
+Thank you
+
